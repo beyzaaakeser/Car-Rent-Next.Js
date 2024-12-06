@@ -3,8 +3,8 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className={`text-white w-full p-5`}>
-      <div className="flex justify-between items-center w-full">
+    <div className={`text-white absolute w-full`}>
+      <div className=" container flex justify-between items-center w-full">
         <h1 className="font-bold text-2xl md:text-3xl">
           <Link href="/home">DRIVE</Link>
         </h1>
