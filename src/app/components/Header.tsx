@@ -6,7 +6,10 @@ const Header = () => {
     <div className={`text-white absolute w-full`}>
       <div className=" container flex justify-between items-center w-full">
         <h1 className="font-bold text-2xl md:text-3xl">
-          <Link href="/">DRIVE</Link>
+          <Link href="/">
+            {' '}
+            <span className="text-amber-600">NEXT</span> DRIVE
+          </Link>
         </h1>
         <nav className="text-sm md:text-base flex gap-2 md:gap-4">
           <Link href="/">Explore</Link>

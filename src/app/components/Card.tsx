@@ -47,7 +47,7 @@ const Card = ({ car }: Props) => {
         <hr className="border-[#E9E9E9] border-[1.5px] my-4" />
 
         <div className="flex justify-between text-2xl sm:text-xl">
-          <p className="font-semibold">${car.price}</p>
+          <p className="font-semibold">${car.price.toLocaleString()}</p>
           <div className="flex gap-1 items-center text-blue-600 hover:text-blue-800">
             <Link href={`/car/${car._id}`}>Detail</Link>
             <Image src={arrow} alt="Arrow" />

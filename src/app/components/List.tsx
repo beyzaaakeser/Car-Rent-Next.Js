@@ -1,19 +1,7 @@
-import { CarType } from '../utils/types';
+import { getCars } from '../utils/service';
 import Card from './Card';
 
-type ReturnType = Promise<{
-  message: string;
-  data: CarType[];
-}>;
 
-const getCars = async (): ReturnType => {
-  const res = await fetch('http://localhost:3000/api/vehicles');
-
-  if (!res.ok) {
-    throw new Error('An error occurred while fetching vehicle information.');
-  }
-  return res.json();
-};
 
 const List = async () => {
   const res = await getCars();
