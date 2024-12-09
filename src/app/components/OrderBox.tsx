@@ -3,6 +3,7 @@ import { CarType } from '../utils/types';
 import profile from '@/app/assets/images/pp.png';
 import tel from '@/app/assets/icons/tel.svg';
 import location from '@/app/assets/icons/loc.svg';
+import RentButton from './RentButton';
 
 type Props = {
   car: CarType;
@@ -33,9 +34,7 @@ const OrderBox = ({ car }: Props) => {
         </div>
       </div>
 
-      <button className="bg-amber-600  w-full text-center p-2 rounded-lg text-white font-bold transition hover:bg-amber-800 mt-5">
-        Rent a Car
-      </button>
+      <RentButton car={car}/>
       <button className="bg-green-600  w-full text-center p-2 rounded-lg text-white font-bold transition hover:bg-green-800 mt-5">
         Whatsapp
       </button>

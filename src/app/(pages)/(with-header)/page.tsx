@@ -1,6 +1,6 @@
-import Brands from '../components/Brands';
-import Hero from '../components/Hero';
-import List from '../components/List';
+import Brands from '../../components/Brands';
+import Hero from '../../components/Hero';
+import List from '../../components/List';
 
 const Home = () => {
   return (
