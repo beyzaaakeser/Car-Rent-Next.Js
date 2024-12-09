@@ -4,7 +4,13 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className=" h-[80vh] text-white grid place-items-center p-5 bg-cover bg-center bg-[linear-gradient(#00000084,#00000084),url('../assets/images/bg.jpg')]">
+    <div
+      className=" h-[80vh] text-white grid place-items-center p-5 bg-cover bg-center bg-no-repeat 
+    bg-[linear-gradient(#00000084,#00000084),url('../assets/images/bg-car-xs.jpg')] 
+    sm:bg-[linear-gradient(#00000084,#00000084),url('../assets/images/bg-md.jpg')]
+     lg:bg-[linear-gradient(#00000084,#00000084),url('../assets/images/bg.jpg')] 
+    "
+    >
       <div className="text-center flex flex-col gap-8">
         <p>Discover Rental Cars Near You</p>
 

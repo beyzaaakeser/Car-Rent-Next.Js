@@ -1,13 +1,16 @@
-import Brands from "../components/Brands";
-import Hero from "../components/Hero";
+import Brands from '../components/Brands';
+import Hero from '../components/Hero';
+import List from '../components/List';
 
 const Home = () => {
-  return <div>
-    <Hero/>
-    <Brands/>
+  return (
+    <div>
+      <Hero />
+      <Brands />
 
-    <h1>List</h1>
-  </div>;
+      <List />
+    </div>
+  );
 };
 
 export default Home;
