@@ -1,4 +1,4 @@
-import { CarType } from './types';
+import { CarType, OrderType } from './types';
 
 type DetailRes = Promise<{
   message: string;
@@ -20,6 +20,20 @@ export const getCars = async (): CarsRes => {
 
   if (!res.ok) {
     throw new Error('An error occurred while fetching vehicle information.');
+  }
+  return res.json();
+};
+
+type OrderRes = Promise<{
+  text: string;
+  orders: OrderType[];
+}>;
+
+export const getOrders = async (): OrderRes => {
+  const res = await fetch('http://localhost:3000/api/orders');
+
+  if (!res.ok) {
+    throw new Error('An error occurred while fetching orders information.');
   }
   return res.json();
 };
