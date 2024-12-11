@@ -9,6 +9,7 @@ type Props = {
 
 const RentButton = ({ car }: Props) => {
   const [isLoading, setIsLoading] = useState(false);
+  console.log(car);
   const handleClick = () => {
     setIsLoading(true);
     fetch(`http://localhost:3000/api/checkout`, {

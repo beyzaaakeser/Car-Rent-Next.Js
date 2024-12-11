@@ -12,7 +12,6 @@ type Props = {
 const Detail = async ({ params }: Props) => {
   const { id } = await params;
   const {vehicle} = await getDetail(id);
-  console.log(vehicle)
   return (
     <div>
       <div className="bg-black h-[80px] md:h-[110px]"></div>

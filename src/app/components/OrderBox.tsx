@@ -34,7 +34,7 @@ const OrderBox = ({ car }: Props) => {
         </div>
       </div>
 
-      <RentButton car={car}/>
+      <RentButton car={car} />
       <button className="bg-green-600  w-full text-center p-2 rounded-lg text-white font-bold transition hover:bg-green-800 mt-5">
         Whatsapp
       </button>

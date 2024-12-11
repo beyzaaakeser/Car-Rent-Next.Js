@@ -5,7 +5,7 @@ type DetailRes = Promise<{
   vehicle: CarType;
 }>;
 export const getDetail = async (id: string): DetailRes => {
-  const res = await fetch(`http://localhost:3000/api/vehicles/${id}`);
+  const res = await fetch(`${process.env.BASE_API_URL}/api/vehicles/${id}`);
   if (!res.ok) throw new Error('Detail data could not be obtained');
   return res.json();
 };
@@ -16,7 +16,7 @@ type CarsRes = Promise<{
 }>;
 
 export const getCars = async (): CarsRes => {
-  const res = await fetch('http://localhost:3000/api/vehicles');
+  const res = await fetch(`${process.env.BASE_API_URL}/api/vehicles`);
 
   if (!res.ok) {
     throw new Error('An error occurred while fetching vehicle information.');
@@ -30,7 +30,7 @@ type OrderRes = Promise<{
 }>;
 
 export const getOrders = async (): OrderRes => {
-  const res = await fetch('http://localhost:3000/api/orders');
+  const res = await fetch(`${process.env.BASE_API_URL}/api/orders`);
 
   if (!res.ok) {
     throw new Error('An error occurred while fetching orders information.');
