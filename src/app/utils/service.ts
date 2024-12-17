@@ -5,6 +5,7 @@ type DetailRes = Promise<{
   vehicle: CarType;
 }>;
 export const getDetail = async (id: string): DetailRes => {
+  console.log("getdetailid:",id)
   const res = await fetch(`${process.env.BASE_API_URL}/api/vehicles/${id}`);
   if (!res.ok) throw new Error('Detail data could not be obtained');
   return res.json();

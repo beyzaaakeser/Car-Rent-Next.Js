@@ -11,7 +11,7 @@ type Props = {
 
 const OrderBox = ({ car }: Props) => {
   return (
-    <div className="border shadow rounded-md p-5 max-xl:mt-10 w-full xl:col-span-2">
+    <div className="border shadow rounded-md p-5 max-xl:mt-10 w-full xl:col-span-2 mt-10">
       <div className="flex gap-5">
         <Image src={profile} alt="Profile Picture" />
         <div className="text-xl">

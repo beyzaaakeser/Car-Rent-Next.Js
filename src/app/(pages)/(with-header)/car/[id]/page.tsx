@@ -10,7 +10,10 @@ type Props = {
 };
 
 const Detail = async ({ params }: Props) => {
-  const { id } = await params;
+  const newParams = await params;
+  console.log("Params:",newParams)
+  const id = await newParams.id
+  console.log("id:",id)
   const {vehicle} = await getDetail(id);
   return (
     <div>
