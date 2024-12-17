@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1>My Car Rent App - NextJs & TypeScript</h1>
 
-## Getting Started
+Built on TypeScript and Next.js, this car rental platform was developed with performance, security, and flexibility in mind. Tailwind CSS creates a modern and responsive user interface. The project manages payment processes professionally and securely with Stripe integration.
 
-First, run the development server:
+The homepage includes a list where users can easily find vehicles that suit their needs. Each vehicle has a detail page. Each vehicle's detail page includes information such as brand, model, year, color, price, fuel type, transmission, and condition. Users can access all necessary information about the vehicle on this page. The "Rent a Vehicle" button on the detail page directs the user to the payment page. Payment transactions made with Stripe allow users to easily make payments by entering their credit card information. If the payment is successful, the user is directed to the success page. In unsuccessful payments, an error page is displayed. Users can follow the history of the vehicles they rent from the orders page.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h2> The following technologies were used in the frontend development phase of my site: </h2>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- TypeScript & Next.Js
+- React
+- Mongoose
+- Stripe
+- Tailwind Css
+- Millify
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h2>GIF</h2>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![](/public/car-rent-gif.gif)
 
-## Learn More
+<h2>Main Page</h2>
 
-To learn more about Next.js, take a look at the following resources:
+![](/public/main.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![](/public/main2.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<h2>Car Detail Page</h2>
 
-## Deploy on Vercel
+![](/public/detail.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![](/public/detail2.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+<h2>Payment Page</h2>
+
+![](/public/payment.png)
+
+<h2>Orders</h2>
+
+![](/public/orders.png)
+
